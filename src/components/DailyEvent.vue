@@ -22,50 +22,20 @@ export default {
       dailyEventResult: "",
       eventKeyValue: null,
       eventList: [
-        {
-          eventKey: 0,
-          eventValue: "Kitap Okuma",
-        },
-        {
-          eventKey: 1,
-          eventValue: "Sohbet Etme",
-        },
-        {
-          eventKey: 2,
-          eventValue: "Yeni bir şeyler öğrenme",
-        },
-        {
-          eventKey: 3,
-          eventValue: "Kısa bir proje yapımı",
-        },
-        {
-          eventKey: 4,
-          eventValue: "Kısa bir diziye başlama",
-        },
-        {
-          eventKey: 5,
-          eventValue: "Film izleme",
-        },
-        {
-          eventKey: 6,
-          eventValue: "Kur-an'ı Kerim Öğrenme",
-        },
-        {
-          eventKey: 7,
-          eventValue: "Apo istenilen konuyu anlatacak:D",
-        },
-        {
-          eventKey: 8,
-          eventValue: "Beraber Message-App uygulamasına bakacağız",
-        },
-        {
-          eventKey: 9,
-          eventValue: "Apo ne isterse o",
-        },
-        {
-          eventKey: 10,
-          eventValue: "Meryem ne isterse o",
-        },
+        "Kitap Okuma",
+        "Sohbet Etme",
+        "Yeni bir şeyler öğrenme",
+        "Kısa bir proje yapımı",
+        "Kısa bir diziye başlama",
+        "Film izleme",
+        "Kur-an'ı Kerim Öğrenme",
+        "Apo istenilen konuyu anlatacak:D",
+        "Beraber Message-App uygulamasına bakacağız",
+        "Apo ne isterse o",
+        "Meryem ne isterse o",
+        "İngilizce çalışma.",
+        "Hackerrank algoritma çalışma",
+        "Codepen çalışma yapma. ",
       ],
     };
   },
@@ -73,13 +43,11 @@ export default {
     randomEvent() {
       this.eventKeyValue = Math.floor(Math.random() * this.eventList.length);
       this.resultVisible = true;
-      this.dailyEventResult = this.eventList[this.eventKeyValue].eventValue;
+      this.dailyEventResult = this.eventList[this.eventKeyValue];
     },
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 @import "../assets/daily-event";
 </style>
