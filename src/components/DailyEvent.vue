@@ -36,6 +36,9 @@ export default {
         "İngilizce çalışma.",
         "Hackerrank algoritma çalışma",
         "Codepen çalışma yapma. ",
+        "Git kullanımı",
+        "Socketıo",
+        "Vuex",
       ],
     };
   },
